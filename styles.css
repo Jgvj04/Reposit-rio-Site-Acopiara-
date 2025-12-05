@@ -18,8 +18,8 @@
     src: url(\fonts\fonnts.com-Neulis_Cursive_Black);
 }
 @font-face {
-    font-family: 'Inter-Regular';
-    src: url(./inter/Inter-Regular.otf);
+    font-family: 'Inter-ExtraBold';
+    src: url(./inter/Inter-ExtraBold.otf);
 }
 
 body {
@@ -143,6 +143,7 @@ main .Saiba_mais{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-left: 100px;
 }
 .catalog_content img{
     width: 6rem;
@@ -220,11 +221,25 @@ h2 {
     line-height: 89%
 }
 
+.titulo02{
+    font-family: 'Neulis';
+    color: var(--header-bg-color);
+    padding-left: 10px;
+    font-size: 100px;
+    line-height: 89%
+}
+
 .titulos{
     font-family: 'Neulis';
     color: white;
     font-size: 114px;
     line-height: 89%
+}
+
+.sub_titulo{
+    font-family: 'Inter-ExtraBold';
+    font-size: 35px;
+    color:var(--header-bg-color);
 }
 
 .purple_fax .container_content{
