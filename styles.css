@@ -22,6 +22,9 @@
 
 body {
     background-color: var(--header-font-color);
+    overflow-x: hidden;
+    max-width: 1924px;;
+    margin: 0px;
 }
 
 .header{
@@ -29,9 +32,11 @@ body {
     color: var(--header-font-color);
     align-items: center;
     padding: 1rem;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
 }
 
 select.main_picker{
@@ -59,15 +64,29 @@ select ::picker-icon{
     border-radius: 25px;
     font-size: 1rem;
 }
+
+main .Saiba_mais{
+    position: relative;
+    left: 5px;
+}
 .purple_fax{
     background-color: var(--body-purple-bg-color);
     align-items: center;
     min-width: 100%;
-    padding: 60px 0;
-    display: flex;
-    flex-direction: column;
+    padding: 80px 0;
+    display: block;
     justify-content: space-between;
     margin: 80px 0;
+}
+
+.grid_container{
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    column-count: 2;
+    column-gap: 10px;
 }
 
 .block{
@@ -76,11 +95,16 @@ select ::picker-icon{
     display: flex;
     align-items: center;
     gap: 20px;
-    max-width: 600px;
-    margin: 20px;
+    break-inside: avoid;
+    max-width: 340px;
+    margin-bottom: 20px;
     border-radius: 30px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 4px 10px #000000;
+}
+
+.block_icon{
+    width: 130px;
 }
 
 .block_2{
@@ -96,21 +120,124 @@ select ::picker-icon{
     box-shadow: 0 4px 10px #000000;
 }
 
+.catalog_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog_content img{
+    width: 6rem;
+    padding: 10px;
+}
+
+.first_content{
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+  
 h2 {
     font-family: 'Inter-Bold';
     color: var(--header-bg-color);
+    padding: 10px;
+}
+
+.product_title{
+    display: flex;
+    flex-direction: row;
+}
+
+.container_image{
+    position: relative;
+    width: 100%;
+}
+
+.sub_fundo{
+    width: 350px;
+    top: -150px;
+    position: absolute;
+    z-index: 1;
+}
+.foto1{
+    width: 430px;
+    top: -120px;
+    position: absolute;
+    z-index: 2;
+}
+.foto2{
+    width: 250px;
+    top: 30px;
+    left: 130px;
+    position: absolute;
+    z-index: 3;
+}
+
+.left_side img {
+    width: 10rem;
+    padding: 10px 10px 0px 10px;
+}
+.container_image{
+    position: relative;
+    width: 100%;
 }
 
 .h3{
     font-family: 'Inter-Bold';
     color: var(--header-bg-color);
+    padding: 10px;
 }
 
-.purple_fax > div > .h3{
+.purple_fax .container_content{
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.purple_fax .describe{
+    max-width: 50%;
+}
+.purple_fax .mascot{
+    position: relative;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.grafismo1{
+    width: 100px;
+    position: absolute;
+    top: 35px;
+    right: 230px;
+    z-index: 1;
+}
+
+.grafismo2{
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    z-index: 1;
+}
+
+.amaju{
+    width: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.purple_fax > .container_content > div > .h3{
     font-family: 'Inter-Bold';
     color: rgb(255, 255, 255);
 }
-.purple_fax > div > .p{
+.purple_fax > .container_content >  div > .p{
     font-family: 'Inter-Regular';
     color: rgb(255, 255, 255);
 }
@@ -118,4 +245,5 @@ h2 {
 .p{
     font-family: 'Inter-Regular';
     color: var(--header-bg-color);
+    padding: 10px;
 }
