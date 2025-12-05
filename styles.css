@@ -1,5 +1,7 @@
 * {
-    padding: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,8 +14,8 @@
 }
 
 @font-face{
-    font-family: 'Inter-Bold';
-    src: url(./inter/Inter-Bold.otf);
+    font-family: Naut'Neulis_Cursive_Black';
+    src: url(\fonts\fonnts.com-Neulis_Cursive_Black);
 }
 @font-face {
     font-family: 'Inter-Regular';
@@ -27,11 +29,20 @@ body {
     margin: 0px;
 }
 
+.logo {
+    width: 200px;
+}
+
+
 .header{
     background-color: var(--header-bg-color);
     color: var(--header-font-color);
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding-left: 22rem;
+    padding-right: 22rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -139,7 +150,7 @@ main .Saiba_mais{
 }
 
 .first_content{
-    padding: 40px 10px;
+    margin: 10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -163,38 +174,57 @@ h2 {
 }
 
 .sub_fundo{
-    width: 350px;
-    top: -150px;
+    width: 600px;
+    top: -300px;
     position: absolute;
     z-index: 1;
 }
 .foto1{
-    width: 430px;
-    top: -120px;
+    width: 600px;
+    top: -200px;
+    left: 50px;
     position: absolute;
     z-index: 2;
 }
 .foto2{
-    width: 250px;
+    width: 400px;
     top: 30px;
-    left: 130px;
+    left: 150px;
     position: absolute;
     z-index: 3;
 }
 
 .left_side img {
     width: 10rem;
-    padding: 10px 10px 0px 10px;
+    padding: 0 10px 0 10px;
 }
+
+.left_side {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+}
+
 .container_image{
     position: relative;
     width: 100%;
 }
 
-.h3{
-    font-family: 'Inter-Bold';
+.titulo01{
+    font-family: 'Neulis';
     color: var(--header-bg-color);
-    padding: 10px;
+    padding-left: 10px;
+    font-size: 67px;
+    line-height: 89%
+}
+
+.titulos{
+    font-family: 'Neulis';
+    color: white;
+    font-size: 114px;
+    line-height: 89%
 }
 
 .purple_fax .container_content{
@@ -252,5 +282,8 @@ h2 {
 .p{
     font-family: 'Inter-Regular';
     color: var(--header-bg-color);
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
 }
