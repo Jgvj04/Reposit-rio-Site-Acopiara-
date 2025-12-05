@@ -21,6 +21,10 @@
     font-family: 'Inter-ExtraBold';
     src: url(./inter/Inter-ExtraBold.otf);
 }
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(./inter/Inter-Regular.otf)
+}
 
 body {
     background-color: var(--header-font-color);
