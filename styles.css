@@ -40,18 +40,19 @@ body {
 
 .header {
     background-color: var(--header-bg-color);
-    
     display: flex;
-    justify-content: center;
+    justify-content: space-between; 
     align-items: center;
     position: relative;
-    gap: 14rem;
-    padding: 1rem 0;
+    width: 100%;
+    padding: 1rem clamp(2rem, 15vw, 22rem); 
+    gap: 1rem; 
 }
 
+
 .nav-menu {
-    display: flex; 
-    gap: 6rem;
+    display: flex;
+    gap: clamp(2rem, 5vw, 6rem); 
 }
 
 .header-controls {
@@ -169,20 +170,32 @@ main .Saiba_mais{
     padding: 10px;
 }
 
+
+
 .first_content {
-    
     width: 100%;
-    max-width: 1400px; 
-    margin: 0 auto; 
-    padding: 4rem 2rem; 
+    max-width: 1400px;
+    margin: 0 auto;
+    
+    
+    height: 400px; 
+    min-height: 600px; 
+    
+    padding: 2rem 2rem;
     
     display: flex;
     flex-direction: row;
     align-items: center; 
     justify-content: space-between;
     gap: 2rem;
-    min-height: 80vh; 
+
     
+    background-color: var(--header-font-color);
+    background-image:
+        linear-gradient(rgba(239, 230, 199, 0.85), rgba(239, 230, 199, 0.85)),
+        url('Texture_01.png');
+    background-repeat: repeat;
+    background-size: auto;
 }
   
 h2 {
@@ -410,6 +423,11 @@ h2 {
         text-align: left; 
         align-items: flex-start; 
         padding: 2rem 1.5rem;
+        
+        /* === A CORREÇÃO É ESTA === */
+        height: auto;      /* Libera a altura fixa de 400px */
+        min-height: auto;  /* Libera a altura mínima de 600px */
+        /* Agora o bege vai crescer até abraçar a imagem inteira */
     }
 
     .left_side {
@@ -429,30 +447,34 @@ h2 {
     }
 
     
-    /* .container_image {
-        height: 450px;
-        margin-top: 20px;
-    } */
+    .container_image {
+    
+        height: auto; 
+        width: 100%;
+        margin-top: 40px; 
+        margin-bottom: 20px; 
+        
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .sub_fundo {
+    
+        position: relative; 
+        top: auto;
+        left: auto;
+        transform: none;
+
+    
         width: 90%; 
-        max-width: 400px;
+        max-width: 400px; 
+        height: auto; 
+        
+        padding-left: 0; 
+        z-index: 2;
     }
-
-    /* .foto1 {
-        left: 50%;
-        transform: translateX(-50%);
-        width: 70%;
-        top: 20px;
-        right: auto;
-    }
-
-    .foto2 {
-        left: 60%;
-        transform: translateX(-50%);
-        width: 50%;
-        bottom: 50px;
-    } */
 
    
     .purple_fax {
