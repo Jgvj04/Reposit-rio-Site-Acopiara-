@@ -120,6 +120,16 @@ main .Saiba_mais{
     column-gap: 10px;
 }
 
+.grid_container2{
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    column-count: 2;
+    column-gap: 20px;
+}
+
 .block{
     background-color: var(--block-bg-color);
     color: var(--header-bg-color);
@@ -144,6 +154,17 @@ main .Saiba_mais{
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    gap: 20px;
+    max-width: 600px;
+    margin: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 10px #000000;
+}
+
+.block_3{
+    background-color: var(--block-bg-color);
+    color: var(--header-bg-color);
     gap: 20px;
     max-width: 600px;
     margin: 20px;
