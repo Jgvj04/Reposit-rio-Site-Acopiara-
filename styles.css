@@ -135,9 +135,9 @@ main .Saiba_mais{
     grid-template-columns: 1fr 1fr;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 150px;
     padding: 0 30px;
-    column-gap: 20px;
+    column-gap: 10px;
 }
 
 .block{
@@ -175,11 +175,11 @@ main .Saiba_mais{
 .block_3{
     background-color: var(--block-bg-color);
     color: var(--header-bg-color);
-    gap: 20px;
-    max-width: 600px;
+    gap: 50px;
+    max-width: 1000px;
     margin: 20px;
     border-radius: 30px;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0 4px 10px #000000;
 }
 
@@ -194,7 +194,7 @@ main .Saiba_mais{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 10px;
 }
 
 .fairs_content{
@@ -202,7 +202,7 @@ main .Saiba_mais{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 10px;
 }
 
 .catalog_content img{
@@ -325,6 +325,7 @@ h3 {
 
 .titulo02{
     font-family: 'Neulis';
+    text-align: center;
     color: var(--header-bg-color);
     padding-left: 10px;
     font-size: 100px;
@@ -387,8 +388,27 @@ h3 {
     padding-right: 10px;
     padding-bottom: 10px;
     font-size: 26px;
+    text-align: center;
 }
 
+.p3{
+    font-family: 'Inter-Regular';
+    color: var(--header-bg-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
+}
+
+.describe .p{
+    font-family: 'Inter-Regular';
+    color: var(--header-bg-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    text-align: start;
+}
 .p2{
     font-family: 'Inter-Regular';
     color: var(--header-font-color);
