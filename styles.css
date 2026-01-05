@@ -39,7 +39,7 @@ body {
 
 .logo {
     width: 200px;
-    margin-left: 10px;
+    margin-left: -70px;
 }
 
 
@@ -98,7 +98,7 @@ select ::picker-icon{
     font-family: "Inter-ExtraBold";
     border-radius: 25px;
     font-size: 1rem;
-    margin-right: 140px;
+    margin-right: 55px;
 }
 
 main .Saiba_mais{
@@ -125,7 +125,7 @@ main .Saiba_mais{
     grid-template-columns: 1fr 1fr;
     width: 100%;
     max-width: 1200px;
-    margin-left: 275px;
+    margin-left: 170px;
     padding: 0 30px;
     column-gap: 10px;
 }
@@ -356,11 +356,11 @@ h3 {
 
 .purple_fax .describe{
     max-width: 50%;
-    margin-left: 260px;
+    margin-left: 150px;
 }
 .purple_fax .mascot{
     position: relative;
-    margin-right: 300px;
+    margin-right: 180px;
     width: 100px;
     display: flex;
     justify-content: flex-end;
