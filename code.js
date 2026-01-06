@@ -4,7 +4,8 @@ function toggleMenu() {
 }
 
 
-const urlJSON = "https://raw.githubusercontent.com/RenanPls/projeto-acopiara-dados/refs/heads/main/artesoes.json";
+const urlJSON = "https://raw.githubusercontent.com/RenanPls/projeto-acopiara-dados/main/artesoes.json";
+const urlBaseImagens = "https://raw.githubusercontent.com/RenanPls/projeto-acopiara-dados/main/";
 
 async function carregarArtesaos() {
     try {
@@ -12,40 +13,46 @@ async function carregarArtesaos() {
         const artesaos = await resposta.json();
         
         const containerPai = document.getElementById('grid-artesaos');
-        containerPai.innerHTML = "";
+        containerPai.innerHTML = ""; 
 
         artesaos.forEach(artesa => {
-
+           
             const card = document.createElement('div');
             card.className = 'block';
 
+          
             const containerFoto = document.createElement('div');
             containerFoto.className = 'foto-circular';
 
             const imagem = document.createElement('img');
-            imagem.src = artesa.foto;
+            imagem.src = urlBaseImagens + artesa.foto; 
             imagem.alt = `Foto de ${artesa.nome}`;
             imagem.className = 'block_icon';
 
             containerFoto.appendChild(imagem);
 
+     
             const containerInfo = document.createElement('div');
             containerInfo.className = 'block_content';
 
+      
             const nome = document.createElement('h3');
             nome.className = 'h3';
             nome.textContent = artesa.nome;
 
+          
             const descricao = document.createElement('p');
             descricao.className = 'p-card';
-            descricao.textContent = artesa.descricao;
+            descricao.textContent = artesa.descricao; 
 
+        
             containerInfo.appendChild(nome);
             containerInfo.appendChild(descricao);
 
             card.appendChild(containerFoto);
             card.appendChild(containerInfo);
             
+         
             containerPai.appendChild(card);
         });
 
