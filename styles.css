@@ -98,21 +98,18 @@ strong {
 
 .first_content {
     width: 100%;
-    max-width: none; 
     margin: 0;
-
-    padding: 90px calc((100% - 1400px) / 2 + 40px) 30px; 
+    
+    padding: 60px 40px; 
+    
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    
+    align-items: center;
     background-color: var(--header-font-color);
     background-image: linear-gradient(rgba(239, 230, 199, 0.6), rgba(239, 230, 199, 0.6)), url('Texture_01.png');
-    
-  
     background-repeat: repeat;
-
-    min-height: 650px; 
+    min-height: 650px;
+    overflow: hidden; 
 }
 
 select.main_picker{
@@ -728,6 +725,7 @@ h3 {
    RESPONSIVIDADE (MOBILE)
    ========================================= */
 
+
 @media (max-width: 900px) {
 
     .responsive-br {
@@ -983,7 +981,7 @@ h3 {
     }
 
     .grid_container {
-        grid-template-columns: 1fr; /* 1 coluna no celular */
+        grid-template-columns: 1fr; 
     }
 
     .block {
