@@ -460,6 +460,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 300px;
+    margin-right: -600px;
 }
 
 .video_bg_block video {
@@ -705,12 +707,17 @@ h3 {
     gap: 1rem; 
 }
 
+.footer .logo {
+    margin-left: 10px;
+}
+
 .contatos {
     color: var(--header-font-color);
     font-family: 'Inter-Regular';
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-right: 20px;;
 }
 
 .responsive-br {
@@ -953,6 +960,8 @@ h3 {
     .video_bg_block {
         border-radius: 30px;
         padding: 15px;
+        margin-left: 20px;
+        margin-right: 20px;;
     }
 
     .video_bg_block video {
@@ -1030,5 +1039,12 @@ h3 {
 
     .titulo02 {
         font-size: 50px;
+    }
+    
+    .footer .logo {
+        margin-left: -85px;
+    }
+    .contatos {
+        margin-right: -80px;;
     }
 }
