@@ -461,7 +461,35 @@ html {
     justify-content: center;
     align-items: center;
     margin-left: 300px;
-    margin-right: -600px;
+    margin-right: -300px;
+}
+
+.icone1 {
+    z-index: 3;
+}
+
+.icone2 {
+    z-index: 3;
+}
+
+.icone3 {
+    z-index: 3;
+}
+
+.icone4 {
+    z-index: 3;
+}
+
+.icone5 {
+    z-index: 3;
+}
+
+.icone6 {
+    z-index: 3;
+}
+
+.icone7 {
+    z-index: 3;
 }
 
 .video_bg_block video {
