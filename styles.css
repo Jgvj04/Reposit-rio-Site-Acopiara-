@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-/*Largura definitiva da página: 1924px
-  Espaçamento da esquerda: 318px
-  Espaçamento da direita: 320px */
+
 
 :root {
     --header-bg-color: #b25836;
