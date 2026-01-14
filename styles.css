@@ -798,6 +798,34 @@ h3 {
     gap: 1rem; 
 }
 
+.footer_text {
+    font-family: 'Neulis', sans-serif; 
+    font-weight: 400; 
+    font-size: 18px;
+    color: var(--header-font-color);
+    line-height: 1.2;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    align-items: flex-start;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.footer_icon {
+    width: 24px; 
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0; 
+}
+
 .contatos {
     color: var(--header-font-color);
     font-family: 'Inter-Regular';
@@ -1131,5 +1159,20 @@ h3 {
 
     .titulo02 {
         font-size: 50px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .contatos {
+        align-items: center; 
+    }
+
+    .footer_text {
+        font-size: 16px;
     }
 }
