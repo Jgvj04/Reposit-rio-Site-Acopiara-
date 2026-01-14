@@ -210,12 +210,12 @@ html {
 }
 
 .icon_left {
-    left: -80px; 
+    left: -100px; 
     top: -150px; 
 }
 
 .icon_right {
-    right: -160px;
+    right: -180px;
     top: -300px; 
 }
 
