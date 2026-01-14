@@ -132,12 +132,7 @@ html {
     cursor: pointer;
 }
 
-.nav-link::after {
-    content: '▼';
-    font-size: 10px;
-    color: white;
-    transition: transform 0.3s;
-}
+
 
 .nav-link:hover {
     opacity: 0.8;
@@ -203,7 +198,39 @@ html {
     margin-top: 40px; 
     padding-bottom: 40px; 
     height: auto;
+    position: relative; 
 }
+
+.decor_icon {
+    position: absolute;
+    pointer-events: none; 
+    z-index: 0; 
+    height: auto;
+    width: 350px; 
+}
+
+.icon_left {
+    left: -80px; 
+    top: -150px; 
+}
+
+.icon_right {
+    right: -160px;
+    top: -300px; 
+}
+
+.botao_meio {
+    right: -50px;
+    top: 40%; 
+    width: 180px;
+}
+
+.flor_baixo {
+    left: -40px;
+    bottom: -100px; 
+    width: 220px;
+}
+
 
 .purple_fax .container-alinhado {
     padding: 15px 40px;
@@ -378,6 +405,12 @@ html {
     margin: 0 auto;
 }
 
+.retros_catalog {
+    width: -240px;
+    right: -80px;
+    top: 2800px; 
+}
+
 .catalog_description {
     font-family: 'Inter-Regular';
     font-size: 26px;
@@ -430,6 +463,51 @@ html {
     text-align: center;
 }
 
+.carousel_wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel_btn {
+    position: absolute;
+    z-index: 10; 
+    
+
+    background-color: var(--header-bg-color);
+    color: var(--header-font-color);
+    
+    border: none;
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.carousel_btn:hover {
+    transform: scale(1.1); 
+    background-color: var(--block-bg-color); 
+    color: var(--header-bg-color);
+}
+
+.prev_btn {
+    left: 10px; 
+}
+
+.next_btn {
+    right: 10px; 
+}
+
 .fairs_section {
     display: flex;
     flex-direction: column;
@@ -437,6 +515,18 @@ html {
     padding: 80px 40px;
     position: relative;
     overflow: hidden;
+}
+
+.agulhas_feiras {
+    width: 450px;
+    right: -220px;
+    top: 10%; 
+}
+
+.retros_footer {
+    width: 260px;
+    left: -80px;
+    bottom: -40px; 
 }
 
 .fairs_content {
@@ -806,6 +896,10 @@ h3 {
         word-break: break-word; 
     }
 
+    .carousel_btn {
+        display: none;
+    }
+
     .header .header-btn {
         display: none !important;
     }
@@ -906,6 +1000,10 @@ h3 {
     .purple_fax .container_content {
         flex-direction: column;
         gap: 50px;
+    }
+
+    .decor_icon {
+        display: none;
     }
 
     .purple_fax .describe {

@@ -114,6 +114,32 @@ async function carregarArtesaos() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const trackContainer = document.querySelector('.carousel_container');
+    const prevBtn = document.querySelector('.prev_btn');
+    const nextBtn = document.querySelector('.next_btn');
+
+    if (!trackContainer || !prevBtn || !nextBtn) return;
+
+    const scrollAmount = 480; 
+
+    nextBtn.addEventListener('click', () => {
+        trackContainer.scrollBy({
+            top: 0,
+            left: scrollAmount, 
+            behavior: 'smooth' 
+        });
+    });
+
+    prevBtn.addEventListener('click', () => {
+        trackContainer.scrollBy({
+            top: 0,
+            left: -scrollAmount, 
+            behavior: 'smooth'
+        });
+    });
+});
+
 
 
 window.onload = () => {
